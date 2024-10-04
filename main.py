@@ -1,5 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, IntVar
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
 from PIL import Image, ImageTk
 import random
 
